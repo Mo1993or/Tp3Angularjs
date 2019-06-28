@@ -1,0 +1,31 @@
+
+<div class="loginBox">
+  <h2>Titre</h2>
+  <input #box (keyup.enter)="changertitre(box.value)">
+  <button  (click)="changertitre(box.value)" block>changer</button>
+  <p>Titre: {{titre}}</p><br/><br/>
+
+<h2>Connectez-vous ici</h2>
+
+
+
+<p>{{message}}</p>
+<p>Login</p>
+<form>
+<input type="text"  name="login" [(ngModel)]="loginu" placeholder="Votre Email" data-toggle="tooltip" data-placement="left"
+     title="Saisissez votre adresse Email ici">
+
+  
+
+<p>Mot de passe</p>
+<input type="password" name="password" [(ngModel)]="password" placeholder="Votre mot de passe" data-toggle="tooltip" data-placement="right"
+     title="Saisissez votre mot de passe ici"><br/>
+
+   <button  (click)="login()" >connecter</button>
+   
+
+  </form>
+    
+ 
+
+</div>
